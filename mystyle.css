@@ -1,0 +1,71 @@
+/* ------------ TASK-2 ------------- */
+
+/* -------------- BODY ---------------*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    background-image: url("bg1.webp");
+}
+
+/* -------------- STOP WATCH ---------------*/
+.stopwatch {
+    text-align: center;
+    border: solid black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px white;
+    background-color: rgb(19, 17, 17);
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.buttons button {
+    color: green;
+    background-color: black;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    transition: color 0.3s, background-color 0.3s, border 0.3s, box-shadow 0.3s, scale 0.3s;
+    color: black;
+    background-color: white;
+    border: solid green;
+    box-shadow: 0 0 10px green;
+    scale: 99%;
+}
+
+.buttons button:disabled {
+    color: white;
+    background-color: rgb(54, 51, 51);
+    box-shadow: 0 0 0 black;
+    border: silver;
+    transition: none;
+    scale: none;
+}
+
+/*---------------- LAPS ----------------*/
+#laps {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#laps li {
+    color: white;
+    padding: 5px;
+    border-bottom: 1px solid green;
+}
